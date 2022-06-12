@@ -97,3 +97,9 @@ border: solid 1px #FFFFFF;
 img {
  width: 100%; 
 }
+
+@media screen and (max-width: 768px) {
+  .location {
+    display: contents;
+  }
+}
