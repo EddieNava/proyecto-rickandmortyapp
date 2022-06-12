@@ -100,6 +100,9 @@ img {
 
 @media screen and (max-width: 768px) {
   .location {
-    display: contents;
+    /*display: contents;*/
+    display: flex;
+    flex-direction: column;
+    
   }
 }
