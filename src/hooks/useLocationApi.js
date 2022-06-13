@@ -11,6 +11,7 @@ if (searchLocation === undefined) {
     locationNumber = Math.ceil(Math.random() * 126)
 } else {
     locationNumber = searchLocation
+    
 }
 const URL = `https://rickandmortyapi.com/api/location/${locationNumber}` 
  

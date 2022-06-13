@@ -16,6 +16,7 @@ function App() {
 
   const location = useLocationApi(searchLocation)
   
+  
   useEffect (() => {
     setLoading(true)
     setTimeout(() => {
@@ -35,11 +36,13 @@ function App() {
              <img src={ImagenPrin} /> 
              <InputSearch setSearchLocation={setSearchLocation} />
           </header>
-           
+          <h1 className='h1'> Location Info </h1> 
           <div>
             <LocationInfo location={location} />
           </div>
-          <div className='characters'>
+          <h1 className='h1'> Residents </h1>
+          <div className='characters'> 
+         
             {location?.residents.map(resident => (
               <CardCharacter
                 resident={resident}
@@ -55,3 +58,4 @@ function App() {
 
 
 export default App
+
